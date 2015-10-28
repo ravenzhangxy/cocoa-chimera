@@ -15,6 +15,9 @@
 		A9B54E8A1BE0A08B00600761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B54E881BE0A08B00600761 /* LaunchScreen.storyboard */; };
 		A9B54E951BE0A08B00600761 /* ChimeraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B54E941BE0A08B00600761 /* ChimeraTests.m */; };
 		A9B54EA01BE0A08C00600761 /* ChimeraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B54E9F1BE0A08C00600761 /* ChimeraUITests.m */; };
+		EBC759C61BE0A8EE002D5684 /* CCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC759C51BE0A8EE002D5684 /* CCWebView.m */; };
+		EBC759CC1BE0B3CE002D5684 /* UIWebView+CCUIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC759CB1BE0B3CE002D5684 /* UIWebView+CCUIWebView.m */; };
+		EBC759CF1BE0BB44002D5684 /* WKWebView+CCWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC759CE1BE0BB44002D5684 /* WKWebView+CCWKWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		A9B54E9B1BE0A08B00600761 /* ChimeraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChimeraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B54E9F1BE0A08C00600761 /* ChimeraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChimeraUITests.m; sourceTree = "<group>"; };
 		A9B54EA11BE0A08C00600761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC759C41BE0A8EE002D5684 /* CCWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWebView.h; sourceTree = "<group>"; };
+		EBC759C51BE0A8EE002D5684 /* CCWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWebView.m; sourceTree = "<group>"; };
+		EBC759C71BE0B059002D5684 /* CCWebViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWebViewProvider.h; sourceTree = "<group>"; };
+		EBC759CA1BE0B356002D5684 /* UIWebView+CCUIWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+CCUIWebView.h"; sourceTree = "<group>"; };
+		EBC759CB1BE0B3CE002D5684 /* UIWebView+CCUIWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+CCUIWebView.m"; sourceTree = "<group>"; };
+		EBC759CD1BE0BA32002D5684 /* WKWebView+CCWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+CCWKWebView.h"; sourceTree = "<group>"; };
+		EBC759CE1BE0BB44002D5684 /* WKWebView+CCWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+CCWKWebView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +119,14 @@
 				A9B54E861BE0A08B00600761 /* Assets.xcassets */,
 				A9B54E881BE0A08B00600761 /* LaunchScreen.storyboard */,
 				A9B54E8B1BE0A08B00600761 /* Info.plist */,
+				EBC759C41BE0A8EE002D5684 /* CCWebView.h */,
+				EBC759C51BE0A8EE002D5684 /* CCWebView.m */,
+				EBC759C71BE0B059002D5684 /* CCWebViewProvider.h */,
 				A9B54E7A1BE0A08B00600761 /* Supporting Files */,
+				EBC759CA1BE0B356002D5684 /* UIWebView+CCUIWebView.h */,
+				EBC759CB1BE0B3CE002D5684 /* UIWebView+CCUIWebView.m */,
+				EBC759CD1BE0BA32002D5684 /* WKWebView+CCWKWebView.h */,
+				EBC759CE1BE0BB44002D5684 /* WKWebView+CCWKWebView.m */,
 			);
 			path = Chimera;
 			sourceTree = "<group>";
@@ -271,8 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B54E821BE0A08B00600761 /* ViewController.m in Sources */,
+				EBC759C61BE0A8EE002D5684 /* CCWebView.m in Sources */,
 				A9B54E7F1BE0A08B00600761 /* AppDelegate.m in Sources */,
+				EBC759CC1BE0B3CE002D5684 /* UIWebView+CCUIWebView.m in Sources */,
 				A9B54E7C1BE0A08B00600761 /* main.m in Sources */,
+				EBC759CF1BE0BB44002D5684 /* WKWebView+CCWKWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +516,7 @@
 				A9B54EA61BE0A08C00600761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9B54EA71BE0A08C00600761 /* Build configuration list for PBXNativeTarget "ChimeraTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				A9B54EA91BE0A08C00600761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9B54EAA1BE0A08C00600761 /* Build configuration list for PBXNativeTarget "ChimeraUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				A9B54EAC1BE0A08C00600761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
