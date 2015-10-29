@@ -11,6 +11,4 @@
 
 @interface CCWebView : UIView
 
-@property (nonatomic, strong) UIView <CCWebViewProvider> *webView;
-
 @end
