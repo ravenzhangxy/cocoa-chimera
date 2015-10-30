@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "CCWebViewProvider.h"
+#import "CCWebViewDelegate.h"
 
 @interface CCWebView : UIView
+
+@property (nonatomic, assign) id <CCWebViewDelegate>delegate;
 
 @end

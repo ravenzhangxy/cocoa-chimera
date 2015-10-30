@@ -9,14 +9,12 @@
 #import "CCWebView.h"
 #import "UIWebView+CCUIWebView.h"
 #import "WKWebView+CCWKWebView.h"
-#import "CCWebViewDelegate.h"
 
 @interface CCWebView () <UIWebViewDelegate, WKNavigationDelegate, WKUIDelegate>
 
 @property (nonatomic, strong) UIView <CCWebViewProvider> *webView;
 @property (nonatomic, strong) UIView <WKNavigationDelegate> *navigationDelegate;
 @property (nonatomic, strong) UIView <WKUIDelegate> *UIDelegate;
-@property (nonatomic, assign) id <CCWebViewDelegate>delegate;
 
 //@property (nonatomic, strong) UIView <CCWebViewJsBridge> *bridge;
 
