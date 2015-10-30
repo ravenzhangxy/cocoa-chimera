@@ -9,12 +9,14 @@
 #import "CCWebView.h"
 #import "UIWebView+CCUIWebView.h"
 #import "WKWebView+CCWKWebView.h"
+#import "CCWebViewDelegate.h"
 
 @interface CCWebView () <UIWebViewDelegate, WKNavigationDelegate, WKUIDelegate>
 
 @property (nonatomic, strong) UIView <CCWebViewProvider> *webView;
-@property (nonatomic, strong) UIView <WKNavigationDelegate> *delegate;
+@property (nonatomic, strong) UIView <WKNavigationDelegate> *navigationDelegate;
 @property (nonatomic, strong) UIView <WKUIDelegate> *UIDelegate;
+@property (nonatomic, assign) id <CCWebViewDelegate>delegate;
 
 //@property (nonatomic, strong) UIView <CCWebViewJsBridge> *bridge;
 
@@ -60,6 +62,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
+    [self.delegate shouldStartDecidePolicy:request];
     return YES;
 }
 
@@ -82,7 +85,7 @@
 
 - (void) webView: (WKWebView *) webView decidePolicyForNavigationAction: (WKNavigationAction *) navigationAction decisionHandler: (void (^)(WKNavigationActionPolicy)) decisionHandler
 {
-    
+    decisionHandler([self.delegate shouldStartDecidePolicy: [navigationAction request]]);
 }
 
 - (void) webView: (WKWebView *) webView didStartProvisionalNavigation: (WKNavigation *) navigation

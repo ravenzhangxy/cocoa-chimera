@@ -54,6 +54,7 @@
 		A9B54E9B1BE0A08B00600761 /* ChimeraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChimeraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B54E9F1BE0A08C00600761 /* ChimeraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChimeraUITests.m; sourceTree = "<group>"; };
 		A9B54EA11BE0A08C00600761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9BDE97F1BE3515900791657 /* CCWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWebViewDelegate.h; sourceTree = "<group>"; };
 		EBC759C41BE0A8EE002D5684 /* CCWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWebView.h; sourceTree = "<group>"; };
 		EBC759C51BE0A8EE002D5684 /* CCWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWebView.m; sourceTree = "<group>"; };
 		EBC759C71BE0B059002D5684 /* CCWebViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWebViewProvider.h; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 				EBC759C41BE0A8EE002D5684 /* CCWebView.h */,
 				EBC759C51BE0A8EE002D5684 /* CCWebView.m */,
 				EBC759C71BE0B059002D5684 /* CCWebViewProvider.h */,
+				A9BDE97F1BE3515900791657 /* CCWebViewDelegate.h */,
 				A9B54E7A1BE0A08B00600761 /* Supporting Files */,
 				EBC759CA1BE0B356002D5684 /* UIWebView+CCUIWebView.h */,
 				EBC759CB1BE0B3CE002D5684 /* UIWebView+CCUIWebView.m */,
