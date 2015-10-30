@@ -14,4 +14,6 @@
 
 @property (nonatomic, assign) id <CCWebViewDelegate>delegate;
 
+- (void) evaluateJavaScript: (NSString *) javaScriptString completionHandler: (void (^)(id, NSError *)) completionHandler;
+
 @end

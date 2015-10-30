@@ -56,6 +56,11 @@
     }
 }
 
+- (void) evaluateJavaScript: (NSString *) javaScriptString completionHandler: (void (^)(id, NSError *)) completionHandler
+{
+    [_webView evaluateJavaScript:javaScriptString completionHandler:completionHandler];
+}
+
 #pragma mark UIWebView Delegate Methods
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
