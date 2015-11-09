@@ -14,6 +14,22 @@
 
 @property (nonatomic, assign) id <CCWebViewDelegate>delegate;
 
+//properties from WKWebkit
+@property (nonatomic, readonly, copy) NSString *title;
+@property (nonatomic, readonly, copy) NSURL *URL;
+@property (nonatomic, readonly) double estimatedProgress;
+@property (nonatomic, readonly) BOOL hasOnlySecureContent;
+
+//wrap method
+- (BOOL) canGoBack;
+- (BOOL) canGoForward;
+- (BOOL) isLoading;
+- (id)goBack;
+- (id)goForward;
+- (id)reload;
+- (id)reloadFromOrigin;
+- (void)stopLoading;
+
 - (void) evaluateJavaScript: (NSString *) javaScriptString completionHandler: (void (^)(id, NSError *)) completionHandler;
 
 @end
