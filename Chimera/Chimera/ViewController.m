@@ -21,7 +21,6 @@
     CCWebView *webView = [[CCWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:webView];
     webView.delegate = self;
-    // test 可否push代码
 }
 
 - (BOOL)shouldStartDecidePolicy:(NSURLRequest *)request
